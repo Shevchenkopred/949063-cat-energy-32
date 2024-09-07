@@ -1,7 +1,28 @@
+.catalog {
+  @media (min-width: $tablet-width) {
+    padding-inline: 30px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktope-width) {
+    padding-inline: 110px;
+  }
+}
+
 .catalog__title {
   @include title-typography ($font-size: 36px);
+  margin: 0;
+  padding: 27px 20px 40px;
+  border-top: 1px solid #d9d9d9;
   font-family: $second-font;
   color: $text-color-second;
+
+  @media (min-width: $tablet-width) {
+    @include title-typography ($font-size: 60px, $line-height: 60px);
+    padding: 0;
+    margin-bottom: 165px;
+    border: none;
+  }
 }
 
 .catalog__show-all-text {
