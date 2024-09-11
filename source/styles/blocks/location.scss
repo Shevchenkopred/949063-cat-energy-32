@@ -66,5 +66,11 @@
 
 .location__maps {
   display: block;
+  width: 100%;
+  min-height: 362px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }
