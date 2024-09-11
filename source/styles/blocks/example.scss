@@ -30,6 +30,10 @@
   }
 }
 
+.example__wrapper-content {
+  position: relative;
+}
+
 .example__title {
   @include title-typography ($font-size: 36px, $line-height: 40px);
   margin: 0 0 40px;
@@ -43,6 +47,7 @@
   }
 
   @media (min-width: $desktope-width) {
+    max-width: 900px;
     margin-bottom: 146px;
   }
 }
@@ -169,7 +174,7 @@
 .example__slider {
   @media (min-width: $desktope-width) {
     position: absolute;
-    top: 0;
-    right: 110px;
+    top: -205px;
+    right: 0;
   }
 }

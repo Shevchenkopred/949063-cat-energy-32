@@ -55,7 +55,7 @@
   @media (min-width: $desktope-width) {
     font-size: 20px;
     line-height: 30px;
-    color: $text-color-default;
+    color: #111111;
   }
 }
 
@@ -72,9 +72,19 @@
     @media (min-width: $tablet-width) {
       background-color: $bg-color-basic-green;
     }
+  }
+}
 
+.main-navigation__link--current-swap-color {
+  &::after {
     @media (min-width: $desktope-width) {
-      background-color: $bg-color-default;
+      background-color: currentColor;
     }
+  }
+}
+
+.main-navigation__link--swap-color {
+  @media (min-width: $desktope-width) {
+    color: $text-color-default;
   }
 }

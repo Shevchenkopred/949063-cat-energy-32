@@ -1,11 +1,6 @@
 .catalog {
   @media (min-width: $tablet-width) {
-    padding-inline: 30px;
     margin-bottom: 74px;
-  }
-
-  @media (min-width: $desktope-width) {
-    padding-inline: 110px;
   }
 }
 
