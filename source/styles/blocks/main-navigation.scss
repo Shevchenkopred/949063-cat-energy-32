@@ -17,9 +17,12 @@
     position: relative;
     display: block;
     min-height: 0;
+    max-width: 436px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktope-width) {
+    max-width: 477px;
     background-color: transparent;
   }
 }
@@ -29,8 +32,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: flex-end;
-    column-gap: 33px;
+    flex-wrap: wrap;
+    gap: 20px 33px;
   }
 }
 
@@ -50,6 +53,14 @@
   text-transform: uppercase;
   color: $text-color-second;
 
+  &:hover:not(.main-navigation__link--current) {
+    opacity: 0.6;
+  }
+
+  &:active:not(.main-navigation__link--current) {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
     font-size: 18px;
@@ -65,6 +76,8 @@
 }
 
 .main-navigation__link--current {
+  cursor: default;
+
   &::after {
     content: "";
     position: absolute;
