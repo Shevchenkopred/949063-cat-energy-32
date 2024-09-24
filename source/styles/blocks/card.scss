@@ -71,7 +71,7 @@
   @media (min-width: 768px) {
     @include title-typography ($font-size: 20px, $line-height: 24px);
     max-width: 135px;
-    margin-bottom: 20px;
+    padding: 10px 0 22px;
     text-align: center;
   }
 }

@@ -159,6 +159,7 @@
   align-items: center;
   grid-column: 1 / span 2;
   align-self: end;
+  max-width: max-content;
   font-family: $second-font;
   text-transform: uppercase;
   color: $text-color-second;

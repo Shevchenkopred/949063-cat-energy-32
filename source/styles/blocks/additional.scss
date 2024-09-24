@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $desktope-width) {
-    min-width: 896px;
+    max-width: 896px;
     margin: 0;
     border: none;
   }
@@ -62,7 +62,7 @@
   }
 
   @media (min-width: $desktope-width) {
-    grid-template-columns: 286px 1fr minmax(45px, auto) max-content;
+    grid-template-columns: 286px minmax(204px, min-content) minmax(45px, auto) max-content;
     align-items: center;
     gap: 0 39px;
     padding: 15px 0 16px;

@@ -96,7 +96,7 @@
       left: auto;
       right: 0;
       width: 50%;
-      min-height: 694px;
+      height: 694px;
       background-color: $bg-color-basic-green-second;
     }
   }
@@ -112,7 +112,7 @@
 
   @media (min-width: $desktope-width) {
     position: static;
-    margin: 35px 0 53px 190px;
+    margin: 35px 0 33px 190px;
   }
 }
 
@@ -157,7 +157,7 @@
   }
 
   @media (min-width: $desktope-width) {
-    top: -313px;
+    top: -303px;
     left: auto;
     right: 331px;
     translate: 0;

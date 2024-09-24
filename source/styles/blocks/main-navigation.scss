@@ -63,12 +63,13 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    padding: 10px 0;
     font-size: 18px;
     line-height: 24px;
-    padding: 0;
   }
 
   @media (min-width: $desktope-width) {
+    padding: 9px 0;
     font-size: 20px;
     line-height: 30px;
     color: #111111;
@@ -76,12 +77,12 @@
 }
 
 .main-navigation__link--current {
-  cursor: default;
+  pointer-events: none;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     left: 50%;
     translate: -50%;
     width: 100%;
